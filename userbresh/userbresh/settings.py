@@ -37,10 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'apps.order.apps.OrderConfig',
-    'apps.pay.apps.PayConfig',
-    'apps.shop.apps.ShopConfig',
-    'apps.users.apps.UsersConfig',
+    'order',
+    'pay',
+    'shop',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'userbresh.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME':'userbresh',
+        'NAME':'paynow',
         'USER':'root',
         'PASSWORD':'',
         'HOST':'127.0.0.1',

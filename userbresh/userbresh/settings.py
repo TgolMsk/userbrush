@@ -109,7 +109,8 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
+#app已经配置所以直接调用app即可
+AUTH_USER_MODEL = "users.UserAdd"
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 

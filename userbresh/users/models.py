@@ -1,7 +1,17 @@
 from django.db import models
+from django.contrib.auth.models import AbstractUser
+
+#扩展默认用户模型
+class UserAdd(AbstractUser):
+	nick_name = models.CharField(max_length=50, verbose_name="别名")
+	class Meta:
+		verbose_name = "用户信息扩展"
+		verbose_name_plural = verbose_name
+			
 
 
 
+#自定义用户模型
 class UserConf(models.Model):
 	#手机号
 	user_phonenumber = models.CharField(max_length=16,verbose_name="手机号",unique=True)
